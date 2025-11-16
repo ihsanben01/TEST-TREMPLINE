@@ -1,51 +1,94 @@
-# Test dev web Tremplin
+# 🚀 Test Développeur Web – Tremplin  
+Projet réalisé pour Majordhom
 
-## Rendu
+## 👤 À propos de moi
+**Nom :** BEN AJIBA  
+**Prénom :** Ihsane  
+**Niveau d’étude :** Bac+5
+**Durée du stage souhaitée :**6 mois
+**Technos maîtrisées :** Angular , spring boot , react ,vue js , .... 
 
-<span style="color:red">**Rendre le projet sur github, en dépôt publique, envoyer le lien
-à [production@majordhom.fr](mailto:production@majordhom.fr), si vous m'envoyez un fichier zip je regarde pas. :)**</span>
+---
 
-Le README.md de votre projet doit comprendre : 
- - Un petit résumé sur vous : nom / prénom, niveau d'étude, durée du stage, etc.
- - Un screenshot de la page créée
- - Comment démarrer l'environnement de votre projet
- - Les réponses à ces questions (pas besoin d'écrire un roman)
-   - Avez-vous trouvé l'exercice facile ou vous a-t-il posé des difficultés ? Si oui, lesquelles ?
-   - Avez-vous appris de nouveaux outils pour répondre à l'exercice ? Si oui, lesquels ?
-   - Pourquoi avoir choisi d'utiliser ces outils ?
-   - Avez-vous utilisé la stack proposée ? Utilisez-vous régulièrement docker ?
+## 📸 Aperçu du projet
 
 
-## Démarrer la stack LAMP (optionnel)
-_Vous pouvez aussi monter votre propre serveur de développement._
+Exemple Markdown :
 
-Cloner le repo github
-> git clone https://github.com/Majordhom/test-tremplin.git
+![Aperçu interface](./Capture d’écran.png)
 
-Démarer la stack Apache / Mysql / PhpMyAdmin avec docker.
 
-> docker compose up -d
+## ⚙️ Démarrer l’environnement du projet
 
-Apache est ouvert sur le port :80 (http://localhost:80).\
-Phpmyadmin est ouvert sur le port :8080 (http://localhost:8080)\
-Mysql est ouvert sur :3306\
-\
-Utilisateur et mdp mysql: `root` et `verysecurepassword`
+### 1️⃣ Cloner le repository
+```bash
+git clone https://github.com/votre-user/votre-repo.git
+cd TEST-TREMPLIN
 
-## Exercice
+Lancer l’environnement Docker
 
-*Limite de temps: 2 jours*
+Assurez-vous d’avoir Docker + Docker Compose installés.
+docker-compose up -d
 
-![alt text](./maquette.png)
+### Importer les tables MySQL
+Depuis phpMyAdmin → Importer → choisir `sql/schema.sql`
 
-Vous devez intégrer cette maquette au site web de l'agence, enregistrez les données du formulaire dans la base de
-données.
-Nous voulons voir votre façon d'intégrer une maquette de manière *responsive*, comment vous organisez votre code (split des fichiers, commentaires, balises html, écriture des fonctions ...), et
-comment vous  gérez la sécurité de celui-ci.
+Structure du projet
+/
+├── docker/
+│   └── Dockerfile.php
+├── www/
+│   ├── index.php
+│   ├── submit.php
+│   ├── style.css
+│   └── images/
+      └── salon.png
+├── docker-compose.yml
+└── Capture d'écran.png
+└── README.md
 
-Le but est de montrer ce que vous savez faire: 
-- Intégrer une maquette front avec minutie
-- Connaissance d'un framework front ou back (React, Angular, Typescript, Laravel, Symfony, NextJS ...) 
-- Autres outils pour la gestion de dates, d'un captcha etc.
 
-Bonne chance !
+
+
+❓ Réponses aux questions
+🔹 Avez-vous trouvé l’exercice facile ou difficile ?
+
+L’exercice était globalement accessible, 
+
+🔹 Difficultés rencontrées
+
+Reproduction exacte de la maquette.
+
+Configuration du lien PHP ↔ MySQL dans Docker.
+
+🔹 Nouveaux outils appris ?
+
+Oui, notamment :
+
+LAMP sous Docker
+
+Utilisation propre de mysqli avec prepared statements
+
+🔹 Pourquoi ces outils ?
+
+Docker : environnement rapide, reproductible, identique à celui demandé.
+
+PHP/MySQL : stack fournie par le test.
+
+Vanilla JavaScript : suffisant pour gérer les disponibilités.
+
+🔹 Avez-vous utilisé la stack proposée ?
+
+Oui, intégralement :
+
+Apache
+
+PHP 
+
+MySQL 
+
+phpMyAdmin
+
+🔹 Utilisez-vous régulièrement Docker ?
+
+Oui,je l'ai déjà utilisé dans des projets académiques et j’en connais les fondamentaux.
