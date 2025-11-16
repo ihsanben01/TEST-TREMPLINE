@@ -1,4 +1,4 @@
-version: '1'
+version: '3.3'
 
 services:
   # MYSQL
@@ -20,7 +20,10 @@ services:
 
   # APACHE
   apache:
-    image: lavoweb/php-8.3
+
+    build:
+      context: ./docker
+      dockerfile: Dockerfile.php   
     ports:
       - "80:80"
     volumes:
